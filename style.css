@@ -1,0 +1,121 @@
+body{
+    
+    background-image: linear-gradient(to bottom, black, #2f3030);
+    color: aqua;
+    margin-left: 20px;
+    height: 623px;
+    align-items: center;
+    font-family: monospace;
+}
+
+p{
+    
+    color: floralwhite;
+}
+
+.passtext{
+    
+    margin-top: 30px;
+}
+
+.Password{
+    
+    background-color: lightgray;
+    border: none;
+    border-radius: 1px;
+    height: 16px;
+}
+
+.Nextbutton{
+    
+    text-decoration: none;
+    color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: lightgray;
+    border: 1px solid floralwhite;
+    float: left;
+    margin-left: 10px;
+    border-radius: 1px;
+    margin-left: 667px;    
+}
+
+h3{
+    
+    color: aquamarine;
+}
+
+.Scroller{
+    
+    margin-top: 20px;
+    color: darkseagreen;
+}
+
+h2{
+    
+    color: antiquewhite;
+}
+
+h4{
+    
+    color: cadetblue;
+}
+
+h5{
+    
+    color: chartreuse;
+}
+
+h6{
+    
+    color: cyan;
+}
+
+.Middle1{
+    
+    background-color: ;
+    border: 1px solid white;
+    width: 500px;
+    text-align: center;
+    margin-left: 450px;
+    margin-top: 0px;
+    margin-bottom: none;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-family: monospace;
+}
+
+.Hello{
+    
+    color: aquamarine;
+    font-size: 40px;
+    text-align: center;
+    font-family: monospace; 
+    font-weight: 10;
+}
+
+.Middle2{
+    
+    background-color: ;
+    border: 1px solid white;
+    width: 500px;
+    text-align: center;
+    margin-left: 450px;
+    margin-top: 0px;
+    margin-bottom: none;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-family: monospace;
+}
+
+canvas {
+	position: ;
+	top: 0;
+	left: 0;
+    background: none;
+    width: 1350px;
+}
+
+span {
+	font-size: 11px;
+}

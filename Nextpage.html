@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+  <title>Password Validation</title>
+</head>
+<body>
+  <br>
+    <h2 id="greeting" class="Hello">Hello, </h2><br><br><br><br>
+  <div class="Middle2"><p>Please Re-enter Your Password for Validation</p><br>
+  <input type="password" id="passwordInput" placeholder="Enter your password">
+    <br><br></div><br><br><br>
+  <button type="button" id="submitButton" class="Nextbutton">Submit</button>
+
+  <script>
+    const greetingSpan = document.getElementById('greeting');
+    const passwordInput = document.getElementById('passwordInput');
+    const submitButton = document.getElementById('submitButton');
+
+    const storedUsername = sessionStorage.getItem('username');
+    if (storedUsername) {
+      greetingSpan.textContent += storedUsername; // Display retrieved username
+    } else {
+      greetingSpan.textContent = "Error: Username not found.";
+    }
+
+    submitButton.addEventListener('click', () => {
+      const enteredPassword = passwordInput.value;
+
+     const storedPassword = sessionStorage.getItem('password');
+
+      if (enteredPassword == storedPassword) { // Replace with secure password validation
+        window.location.href = 'Final.html'; // Redirect to page 3 on success
+      } else {
+        alert("Incorrect password!");
+        window.location.href = 'index.html'; // Redirect to page 1 on failure
+      }
+    });
+  </script>
+</body>
+</html>

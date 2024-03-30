@@ -1,0 +1,59 @@
+<!-- MY Starting Code
+
+
+
+<html>
+
+<head>
+    
+<link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    <br>
+    <p class="usertext">Please Create A User Name</p>
+    <input type="text" placeholder="Username Here" class="Password">
+    <br><br>
+    <p class="Passtext">Please Create A Password</p>
+    <input type="password" placeholder="Password Here" class="Password">
+    <br><br><br><hr><br><br><br><br>
+    <a href="Nextpage.html" class="Nextbutton">Next</a>
+
+
+
+
+
+
+    </body>
+</html>-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+  <title>Login Page</title>
+</head>
+<body><br><br><br><br><br><br><br><br><div class="Middle1">
+  
+  <p class="usertext">Please Create A User Name (No Spaces) </p><br>
+  <input type="text" id="username" placeholder="Username Here" class="Password">  <br><br>
+  <p class="Passtext">Please Create A Password (not stored) (definitely)</p><br>
+    <input type="password" id="password" placeholder="Password Here" class="Password"><br><br></div>  <br><br><br>
+    <a href="#" id="nextButton" class="Nextbutton">Next</a>
+</body>
+<script>
+  const usernameInput = document.getElementById('username');
+  const passwordInput = document.getElementById('password');
+  const nextButton = document.getElementById('nextButton');
+
+  nextButton.addEventListener('click', (event) => {
+    event.preventDefault(); // Prevent default form submission (no form here)
+
+    const username = usernameInput.value;
+    const password = passwordInput.value;
+
+    sessionStorage.setItem('username', username); // Store username in local storage
+    sessionStorage.setItem('password', password);
+    window.location.href = 'Nextpage.html'; // Redirect to the next page
+  });
+</script>
+</html>
